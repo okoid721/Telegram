@@ -12,6 +12,9 @@ bot.on('message', (msg) => {
   if (messageText === '/start') {
     bot.sendMessage(chatId, 'Welcome to the bot!');
   }
+  if (messageText === '/help') {
+    bot.sendMessage(chatId, 'what can i help you with');
+  }
 });
 
 const PORT = process.env.PORT || 8000;

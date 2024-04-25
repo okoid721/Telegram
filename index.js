@@ -15,7 +15,9 @@ bot.on('message', (msg) => {
   if (messageText === '/help') {
     bot.sendMessage(chatId, 'what can i help you with');
   }
-  if (messageText === '/')
+  if (messageText === 'group') {
+    bot.sendMessage(chatId, 'Join The Telegarm Group For More Info');
+  }
 });
 
 const PORT = process.env.PORT || 8000;
